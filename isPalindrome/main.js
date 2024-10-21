@@ -23,3 +23,18 @@ function isPalindrome(word) {
 };
 
 //
+
+
+// Output
+
+if (isPalindrome(userSentence)) {
+
+    alert("La frase che hai inserito è palindroma!");
+
+} else {
+
+    alert("La frase che hai inserito non è palindroma :(");
+
+};
+
+//
