@@ -1,7 +1,7 @@
 // Variables Initialization
 
-const userChoice = prompt("Scegli pari o dispari:").toLowerCase();
-const userNum = parseInt(prompt("Scegli un numero da 1 a 5:"));
+let userChoice = undefined;
+let userNum = undefined;
 const rndNumber = getRndInteger(1, 5);
 let sumNum = undefined;
 
@@ -47,6 +47,40 @@ function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 
 };
+
+//
+
+
+// Input Validation
+
+
+    // userChoice Validation
+
+    userChoice = prompt("Scegli pari o dispari:");
+
+    while (userChoice === null || userChoice === undefined || (userChoice.toLowerCase() !== "pari" && userChoice.toLowerCase() !== "dispari")) {
+
+        userChoice = prompt("Perfavore scegli pari o dispari:");
+
+    }
+
+    userChoice = userChoice.toLowerCase;
+
+    //
+
+
+    // userNum Validation
+
+    userNum = parseInt(prompt("Scegli un numero da 1 a 5:"));
+
+    while (userNum < 1 || userNum > 5 || isNaN(userNum)) {
+
+        userNum = parseInt(prompt("Perfavore scegli un numero da 1 a 5:"));
+
+    }
+
+    //
+
 
 //
 
