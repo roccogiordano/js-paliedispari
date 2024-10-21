@@ -49,3 +49,20 @@ function getRndInteger(min, max) {
 };
 
 //
+
+
+// Output
+
+isEvenOdd(userNum, rndNumber);
+
+if (userChoice === result) {
+
+    alert(`Il numero generato randomicamente è ${rndNumber}, sommato con il numero che hai scelto fa ${sumNum}, che è ${result} come avevi previsto! Hai vinto :)`);
+
+} else {
+
+    alert(`Il numero generato randomicamente è ${rndNumber}, sommato con il numero che hai scelto fa ${sumNum}, che è ${result}. Hai perso :(`);
+
+};
+
+//
