@@ -1,6 +1,6 @@
 // Variables Initialization
 
-const userSentence = prompt("Inserisci una frase:").toString().toLowerCase();
+let userSentence = prompt("Inserisci una frase:");
 
 //
 
@@ -19,6 +19,27 @@ function isPalindrome(word) {
     const reverseSentence = splitSentence.reverse().join("");
 
     return reverseSentence === userSentence;
+
+};
+
+//
+
+
+// Input Validation
+
+while (userSentence === null || userSentence === undefined) {
+
+    userSentence = prompt("Perfavore inserisci una frase:");
+
+};
+
+if (userSentence.length > 100) {
+
+    userSentence = prompt("Perfavore inserisci al massimo 100 caratteri:");
+ 
+} else {
+
+    userSentence = userSentence.toString().toLowerCase();
 
 };
 
