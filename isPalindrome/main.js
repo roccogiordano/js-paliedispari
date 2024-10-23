@@ -9,13 +9,13 @@ let userSentence = prompt("Inserisci una frase:");
 
 /**
  * Checks if a given sentence is palindrome.
- * @param {string || number} word
+ * @param {string || number} sentence
  * @returns {boolean}
  */
 
-function isPalindrome(word) {
+function isPalindrome(sentence) {
 
-    const splitSentence = word.split("");
+    const splitSentence = sentence.split("");
     const reverseSentence = splitSentence.reverse().join("");
 
     return reverseSentence === userSentence;

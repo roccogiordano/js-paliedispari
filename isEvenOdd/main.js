@@ -11,13 +11,13 @@ let sumNum = undefined;
 // Functions Declaration
 
 /**
- * Checks if a given number is even or odd.
+ * Checks if a the sum of two given number is even or odd.
  * @param {number} num1
  * @param {number} num2
  * @returns {string}
  */
 
-function isEvenOdd(num1, num2) {
+function isSumEvenOdd(num1, num2) {
 
     sumNum = num1 + num2;
 
@@ -36,7 +36,7 @@ function isEvenOdd(num1, num2) {
 };
 
 /**
- * Gives a random number between 1 and 5.
+ * Gives a random number between num1 and num2 (both included).
  * @param {number} num1
  * @param {number} num2
  * @returns {number}
@@ -87,7 +87,7 @@ function getRndInteger(min, max) {
 
 // Output
 
-isEvenOdd(userNum, rndNumber);
+isSumEvenOdd(userNum, rndNumber);
 
 if (userChoice === result) {
 
